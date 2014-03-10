@@ -1,1 +1,0 @@
-I've written a really simple piece of code for a parallax image scrolling effect

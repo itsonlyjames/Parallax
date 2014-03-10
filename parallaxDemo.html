@@ -1,0 +1,56 @@
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+	<style type="text/css">
+
+	#parallaxContainer {
+		width:100%;
+		height:500px;
+		position: absolute;
+		background-color: black;
+		top:0;
+		left:0;
+	}
+
+	#parallaxImage{
+		width:100%;
+		height:500px;
+		background-size: cover;
+		position: absolute;
+	}
+
+	#content {
+		width:100%;
+		height:1500px;
+		position: absolute;
+		top:500px;
+		left:0;
+		background-color: #ffffff;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="parallaxContainer">
+		<img id="parallaxImage" src="images/image1.jpg"/>
+	</div>
+
+	<div id="content">
+		
+	</div>
+
+	<script>
+		$(window).scroll(function() {
+	    	var scroll = $(window).scrollTop(),
+	    	slowScroll = scroll/1.5;
+
+	    	$('#parallaxImage').css({ transform: "translateY(" + slowScroll + "px)" });
+		});
+	</script>
+
+</body>
+</html>
