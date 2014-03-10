@@ -7,30 +7,62 @@ I've written a short and simple code to give you a parallax scrolling effect wit
 
 Looks best with a header image, 100% width. But reccomended if used on a smaller image, that the image has a defined edge.
 
+Demo is included in the zip, just scroll down to see the effect!
+
 Example Usage
 ========
 
 ###HTML
 
-```html
+You just need to change YOUR IMAGE LINK, to the image that you would like it to be, in the demo i'm getting the image from my folder called images.
 
-<img id="parallaxImage" src="YOUR IMAGE LINK"/>
+```html
+<div id="parallaxContainer">
+	<img id="parallaxImage" src="YOUR IMAGE LINK"/>
+</div>
+
+<div id="content"></div>
 
 ```
 
 ###CSS
 
-Some css to make it look nice and work better
+Some css to make it look nice and work better.
+
+Feel free to change the css to whatever you please, this is just basic to show you how it will work.
 
 ```css
 
+#parallaxContainer {
+		width:100%;
+		height:500px;
+		position: absolute;
+		background-color: black;
+		top:0;
+		left:0;
+	}
 
+	#parallaxImage{
+		width:100%;
+		height:500px;
+		background-size: cover;
+		position: absolute;
+	}
+
+	#content {
+		width:100%;
+		height:1500px;
+		position: absolute;
+		top:500px;
+		left:0;
+		background-color: #ffffff;
+	}
 
 ```
 
 ###jQuery
 
-You will need to add jQuery to your code as well, add this code just under your opening head tag
+You will need to add jQuery to your code as well, add this code just under your opening head tag.
 
 ```js
 
@@ -38,7 +70,7 @@ You will need to add jQuery to your code as well, add this code just under your 
 
 ```
 
-This is the code the makes it work, add it just above your closing body tag
+This is the code the makes it work, add it just above your closing body tag.
 
 ```js
 
