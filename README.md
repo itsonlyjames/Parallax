@@ -5,7 +5,7 @@ Simple parallax image scrolling effect.
 
 I've written a short and simple code to give you a parallax scrolling effect with any image you desire, can be used with anything.
 
-Looks best with a header image, 100% width. But reccomended if used on a smaller image, that the image has a defined edge.
+Looks best with a header image, 100% width. But recomended if used on a smaller image, that the image has a defined edge.
 
 Demo is included in the zip, just scroll down to see the effect!
 
