@@ -34,29 +34,29 @@ Feel free to change the css to whatever you please, this is just basic to show y
 ```css
 
 #parallaxContainer {
-		width:100%;
-		height:500px;
-		position: absolute;
-		background-color: black;
-		top:0;
-		left:0;
-	}
+	width:100%;
+	height:500px;
+	position: absolute;
+	background-color: black;
+	top:0;
+	left:0;
+}
 
-	#parallaxImage{
-		width:100%;
-		height:500px;
-		background-size: cover;
-		position: absolute;
-	}
+#parallaxImage{
+	width:100%;
+	height:500px;
+	background-size: cover;
+	position: absolute;
+}
 
-	#content {
-		width:100%;
-		height:1500px;
-		position: absolute;
-		top:500px;
-		left:0;
-		background-color: #ffffff;
-	}
+#content {
+	width:100%;
+	height:1500px;
+	position: absolute;
+	top:500px;
+	left:0;
+	background-color: #ffffff;
+}
 
 ```
 
